@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prenota il tuo soggiorno</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Rifugio Bormio</a>
+      <ul>
+        <li><a href="appartamento.html">L'appartamento</a></li>
+        <li><a href="esperienze.html">Esperienze</a></li>
+        <li><a href="prenotazione.html">Prenota</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="prenota">
+    <h1>Prenota il tuo soggiorno</h1>
+    <p>Contattaci per verificare disponibilità e modalità di soggiorno.</p>
+    <form action="mailto:tuoindirizzo@email.com" method="post" enctype="text/plain">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="messaggio">Messaggio</label>
+      <textarea id="messaggio" name="messaggio" rows="5"></textarea>
+      
+      <button type="submit" class="btn">Invia richiesta</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rifugio Bormio</p>
+  </footer>
+</body>
+</html>

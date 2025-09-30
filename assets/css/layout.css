@@ -1,0 +1,171 @@
+/* ================================
+   NAVBAR
+================================= */
+header {
+  background: var(--colore-neve);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.navbar .logo {
+  font-family: var(--font-titoli);
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--colore-legno);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--colore-testo);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--colore-accento);
+}
+
+/* ================================
+   HERO
+================================= */
+.hero {
+  background: url('../img/hero.jpg') center/cover no-repeat;
+  height: 90vh;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--colore-neve);
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 2em;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+  color: var(--colore-neve);
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5em;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+/* ================================
+   SEZIONI
+================================= */
+section {
+  padding: 4em 2em;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.intro {
+  text-align: center;
+}
+
+.descrizione {
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ================================
+   GALLERIA
+================================= */
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.6s ease;
+  height: 100%;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  pointer-events: none;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.carousel:hover button {
+  opacity: 1;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+/* ================================
+   FOOTER
+================================= */
+footer {
+  background: var(--colore-legno);
+  color: var(--colore-neve);
+  text-align: center;
+  padding: 2em;
+  margin-top: 3em;
+}
+
+/* ================================
+   RESPONSIVE
+================================= */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.8em;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}

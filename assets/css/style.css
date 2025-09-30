@@ -1,0 +1,39 @@
+/* ================================
+   STILE BASE E VARIABILI
+================================= */
+:root {
+  --colore-bg: #fdfdfc;
+  --colore-testo: #2e2e2e;
+  --colore-accento: #bfa26a;   /* oro tenue */
+  --colore-legno: #5c4033;     /* marrone caldo */
+  --colore-bosco: #2f4f4f;     /* verde bosco */
+  --colore-neve: #ffffff;
+  --font-titoli: 'Playfair Display', serif;
+  --font-testo: 'Lora', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-testo);
+  background-color: var(--colore-bg);
+  color: var(--colore-testo);
+  line-height: 1.6;
+}
+
+/* TIPOGRAFIA */
+h1, h2, h3 {
+  font-family: var(--font-titoli);
+  font-weight: 600;
+  color: var(--colore-bosco);
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1.2em;
+  font-size: 1.05rem;
+}

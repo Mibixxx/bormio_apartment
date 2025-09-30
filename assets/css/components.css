@@ -1,0 +1,55 @@
+/* ================================
+   BOTTONI
+================================= */
+.btn, button.btn {
+  background: var(--colore-accento);
+  color: var(--colore-neve);
+  border: none;
+  padding: 0.8em 1.5em;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover, button.btn:hover {
+  background: var(--colore-bosco);
+}
+
+/* ================================
+   CARD (esperienze)
+================================= */
+.card {
+  background: var(--colore-neve);
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 2em;
+  margin-bottom: 2em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ================================
+   FORM
+================================= */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 600px;
+  margin: 2em auto;
+}
+
+input, textarea {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: var(--font-testo);
+  font-size: 1rem;
+}
